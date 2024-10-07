@@ -9,3 +9,22 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+function Calculate(){
+    const hodnota_a = document.getElementById('a').value;
+    const hodnota_b = document.getElementById('b').value;
+    const hodnota_c = document.getElementById('c').value;
+
+    let res1;
+    let res2;
+
+    let disc = (hodnota_b * hodnota_b) - (4 * hodnota_a * hodnota_c)
+
+    if (disc >= 0){
+        res1 = (-hodnota_b + Math.sqrt(disc)) / (2*hodnota_a);
+        res2 = (-hodnota_b - Math.sqrt(disc)) / (2*hodnota_a);
+2
+    }else{
+        res1 = "Nelze najít výsledek v poli reálných čísel"
+    }
+}
