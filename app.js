@@ -21,8 +21,15 @@ function Calculate(){
     let disc = (hodnota_b * hodnota_b) - (4 * hodnota_a * hodnota_c)
 
     if (disc >= 0){
-        res1 = (-hodnota_b + Math.sqrt(disc)) / (2*hodnota_a);
-        res2 = (-hodnota_b - Math.sqrt(disc)) / (2*hodnota_a);
+        if(d = 0){
+            res1 = (-hodnota_b) / (2*hodnota_a)
+            res2 = (-hodnota_b) / (2*hodnota_a)
+        }
+        else{
+            res1 = (-hodnota_b + Math.sqrt(disc)) / (2*hodnota_a);
+            res2 = (-hodnota_b - Math.sqrt(disc)) / (2*hodnota_a);
+        }
+
 2
     }else{
         res1 = "Nelze najít výsledek v poli reálných čísel"
