@@ -20,21 +20,24 @@ function Calculate(){
 
     let disc = (hodnota_b * hodnota_b) - (4 * hodnota_a * hodnota_c);
 
-    if (disc >= 0){
-        if(disc = 0){
+    if (disc >= 0)
+    {
+        if(disc === 0)
+        {
             res1 = (-hodnota_b) / (2*hodnota_a);
             res2 = (-hodnota_b) / (2*hodnota_a);
         }
-        else{
+        else
+        {
             res1 = (-hodnota_b + Math.sqrt(disc)) / (2*hodnota_a);
             res2 = (-hodnota_b - Math.sqrt(disc)) / (2*hodnota_a);
         }
-
-2
-    }else{
+    }
+    else
+    {
         res1 = "Nelze najít výsledek v poli reálných čísel";
     }
 
     document.getElementById('x1').innerText = res1;
-    dosument.getElementById('x2').innerText = res2;
+    document.getElementById('x2').innerText = res2;
 }
