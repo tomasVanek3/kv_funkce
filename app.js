@@ -18,12 +18,12 @@ function Calculate(){
     let res1;
     let res2;
 
-    let disc = (hodnota_b * hodnota_b) - (4 * hodnota_a * hodnota_c)
+    let disc = (hodnota_b * hodnota_b) - (4 * hodnota_a * hodnota_c);
 
     if (disc >= 0){
-        if(d = 0){
-            res1 = (-hodnota_b) / (2*hodnota_a)
-            res2 = (-hodnota_b) / (2*hodnota_a)
+        if(disc = 0){
+            res1 = (-hodnota_b) / (2*hodnota_a);
+            res2 = (-hodnota_b) / (2*hodnota_a);
         }
         else{
             res1 = (-hodnota_b + Math.sqrt(disc)) / (2*hodnota_a);
@@ -32,6 +32,9 @@ function Calculate(){
 
 2
     }else{
-        res1 = "Nelze najít výsledek v poli reálných čísel"
+        res1 = "Nelze najít výsledek v poli reálných čísel";
     }
+
+    document.getElementById('x1').innerText = res1;
+    dosument.getElementById('x2').innerText = res2
 }
