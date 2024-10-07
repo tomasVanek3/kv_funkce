@@ -36,5 +36,5 @@ function Calculate(){
     }
 
     document.getElementById('x1').innerText = res1;
-    dosument.getElementById('x2').innerText = res2
+    dosument.getElementById('x2').innerText = res2;
 }
